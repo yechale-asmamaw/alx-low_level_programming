@@ -1,1 +1,1 @@
-READ CAREFULLY
+variables
