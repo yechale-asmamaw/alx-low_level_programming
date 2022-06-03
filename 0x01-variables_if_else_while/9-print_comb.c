@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - all combinations of single digit numbers.
+ * main - all combinations of single digits
 (*
- * Return: 0 
+ * Return: 0 for success
  */
 int main(void)
 {
