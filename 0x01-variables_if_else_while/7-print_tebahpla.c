@@ -2,7 +2,7 @@
 /**
  * main - reverse alphabet
 (*
- * Return: 0 
+ * Return: 0 if success
  */
 int main(void)
 {
