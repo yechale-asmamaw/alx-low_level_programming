@@ -2,7 +2,7 @@
 /**
  * main - all base 16
 (*
- * Return: 0 
+ * Return: 0 on success
  */
 int main(void)
 {
