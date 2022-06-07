@@ -3,11 +3,10 @@
 /**
  * print_alphabet_x10 - entry point
  *
- * Description: Prints 10 times the alphabet with _putchar 
+ * Description: Prints the alphabet with _putchar ten times
  *
  * Return: void
  */
-
 
 void print_alphabet_x10(void)
 {
