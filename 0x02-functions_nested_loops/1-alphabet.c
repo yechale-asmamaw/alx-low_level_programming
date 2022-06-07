@@ -3,7 +3,7 @@
 /**
  * print_alphabet in lower case
  *
- * using putchar
+ * Description: using putchar
  *
  * Return: void
  */
