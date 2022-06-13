@@ -1,18 +1,12 @@
 #include "main.h"
 
-
 /**
- * main - check the code 
+ * reset_to_98 - resets pointer value to 98
+ * @n: pointer to reset to 98
  *
- * Return: Always 0.
+ * Return: void
  */
 void reset_to_98(int *n)
 {
-    int n;
-
-    n = 402;
-    printf("n=%d\n", n);
-    reset_to_98(&n);
-    printf("n=%d\n", n);
-    return (0);
+	*n = 98;
 }
