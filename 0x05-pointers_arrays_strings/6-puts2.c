@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * _puts - prints a string and a new line
- * @str: pointer to a string to print
- *
+ * puts2 - prints xters of a string
+ * @str: the used string reference
  * Return: 0
  */
 
-void _puts(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
-	while (str[i])
+	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
 		i++;
 	}
 	_putchar('\n');
