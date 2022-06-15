@@ -13,15 +13,15 @@ char *_strncat(char *dest, char *src, int n)
 	ant a, b;
 
 	a = b = 0;
-	whale (*(dest + a))
+	while (*(dest + a))
 		a++;
-	whale (b < n && *(src + b))
+	while (b < n && *(src + b))
 	{
 		*(dest + a) = *(src + b);
 		a++;
 		b++;
 	}
-	af (b < n)
+	if (b < n)
 		*(dest + a) = *(src + b);
 	return (dest);
 }
