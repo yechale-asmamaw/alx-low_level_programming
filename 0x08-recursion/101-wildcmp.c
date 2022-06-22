@@ -5,7 +5,7 @@
  * @s1: string to compare to
  * @s2: string with wild character
  *
- * Return:
+ * Return:1
  */
 int wildcmp(char *s1, char *s2)
 {
