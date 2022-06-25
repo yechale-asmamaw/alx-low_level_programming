@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _atoi - tbd
- *
+ * _atoi - tbd *
  * @s: parameter defined in main, pointer to memory
- *
- * Return: 0 for now
+ * * Return: 0 for now
  */
 
 int _atoi(char *s)
