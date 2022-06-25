@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _atoi - tbd *
  * @s: parameter defined in main, pointer to memory
