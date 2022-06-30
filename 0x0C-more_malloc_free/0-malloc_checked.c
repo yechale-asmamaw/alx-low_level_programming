@@ -6,13 +6,13 @@
  * @b: input.
  * Return: Output.
  */
-void *malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int a)
 {
-	void *g = malloc(b);
+	void *b = malloc(a);
 
-	if (g == NULL)
+	if (b == NULL)
 	{
 		exit(98);
 	}
-	return (g);
+	return (b);
 }
