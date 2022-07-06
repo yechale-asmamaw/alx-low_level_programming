@@ -1,33 +1,66 @@
-#include"3-calc.h"
+#include "3-calc.h"
+
 /**
- * get_op_func - get the operator and redirect to the func.
- * @s: the operator
-(* a blank line
-* Description: get the operator and redirect to the func.)?
-(* section header: 3-calc.h)*
-* Return: return null or the function to do.
-*/
-
-int (*get_op_func(char *s))(int, int)
+ * op_add - add
+ * @a: first operand
+ * @b: second operand
+ * Return: the result of the operation
+ */
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i;
+	return (a + b);
+}
 
-	i = 0;
-	while (i < 5)
+/**
+ * op_sub - subtract
+ * @a: first operand
+ * @b: second operand
+ * Return: the result of the operation
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - multiply
+ * @a: first operand
+ * @b: second operand
+ * Return: the result of the operation
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - divide
+ * @a: first operand
+ * @b: second operand
+ * Return: the result of the operation
+ */
+int op_div(int a, int b)
+{
+	if (!b)
 	{
-		if (strcmp(s, ops[i].op) == 0)
-		{
-			return (*(ops[i]).f);
-		}
-		i++;
+		puts("Error");
+		exit(100);
 	}
-	return (NULL);
+	return (a / b);
+}
+
+/**
+ * op_mod - modulo
+ * @a: first operand
+ * @b: second operand
+ * Return: the result of the operation
+ */
+int op_mod(int a, int b)
+{
+	if (!b)
+	{
+		puts("Error");
+		exit(100);
+	}
+	return (a % b);
 }
