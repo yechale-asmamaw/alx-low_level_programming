@@ -1,31 +1,27 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * find_listint_loop - fnd a loop in a list
- * @head: points to beginning of list
- * Return: the address where loop starts or NULL
+ * find_listint_loop - finds a loop in a linked list
+ *
+ * @head: linked list to search
+ *
+ * Return: address of node where loop starts/returns, NULL if no loop
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *tortoise, *hare;
+	listint_t *ptr, *end;
 
-	if (!head)
+	if (head == NULL)
 		return (NULL);
-	tortoise = head;
-	hare = head;
-	while (hare->next && hare->next->next)
+	for (end = head->next; end != NULL; end = end->next)
 	{
-		hare = hare->next->next;
-		tortoise = tortoise->next;
-		if (hare == tortoise)
-		{
-			tortoise = head;
-			while (tortoise != hare)
-			{
-				tortoise = tortoise->next;
-				hare = hare->next;
-			}
-			return (hare);
-		}
+		if (end == end->next)
+			return (end);
+		for (ptr = head; ptr != end; ptr = ptr->next)
+			if (ptr == end->next)
+				return (end->next);
 	}
+
 	return (NULL);
+}
